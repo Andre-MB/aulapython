@@ -33,8 +33,8 @@ def calcdigito(fator: int, cpf):
 cpfs = [
     "123.456.789-12",  # inválido
     "529.982.247-25",  # válido
-    "777.777.777-77",   # inválido (todos os dígitos iguais)
-    "62067769308"
+    "777.777.777-77",   # inválido 
+    "62067769308"       # válido
 ]
 
 for cpf in cpfs:

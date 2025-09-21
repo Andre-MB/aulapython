@@ -6,7 +6,10 @@ def fetch_cep(endpoint):
 	
 	return response.json() if response.status_code == 200 else response.status_code
 
-cep = fetch_cep('01026010')
+# cep = fetch_cep('01026010')
+
+cep = input("Qual o cep quer buscar ? ")
+cep = fetch_cep(cep)
 
 for x in cep:
 	print(x +": "+ cep[x])
